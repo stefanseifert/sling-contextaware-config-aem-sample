@@ -26,7 +26,7 @@ files:
 # Defines configuration parameters and default values
 config:
   contentPackage:
-    group: sample
+    group: pv-sample
     version: "${version}"
 
   # Log levels

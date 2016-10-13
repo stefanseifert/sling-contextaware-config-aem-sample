@@ -17,7 +17,7 @@ nodes:
     variant: aem-publish
 
 config:
-  contentPackage.group: "sample"
+  contentPackage.group: pv-sample
 
   # Log levels
   log:
