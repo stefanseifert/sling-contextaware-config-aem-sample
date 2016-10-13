@@ -1,0 +1,43 @@
+# Adobe Experience Manager (AEM) Instance.
+# AEM quickstart runs directly from command line with embedded Jetty Servlet Container.
+
+variants:
+- variant: aem-author
+- variant: aem-publish
+
+templateDir: sample-aem-cms
+
+files:
+
+# AEM OSGi System Configuration
+- file: sample-aem-cms-config.provisioning
+  dir: packages
+  template: sample-aem-cms-config.provisioning.hbs
+  postProcessors:
+  - aem-contentpackage-osgiconfig
+  postProcessorOptions:
+    contentPackage:
+      name: sample-aem-cms-config
+      rootPath: /apps/sample-aem-cms-config/config
+      filters:
+      - filter: /apps/sample-aem-cms-config
+
+
+# Defines configuration parameters and default values
+config:
+  contentPackage:
+    group: sample
+    version: "${version}"
+
+  # Log levels
+  log:
+    logPath: "logs"
+    projectSpecifcLogLevel: warn
+
+
+  # Example for config override configuration
+  #configOverrides:
+  #  "/path/to/config/scope":
+  #    siteUrl:
+  #    siteUrlSecure:
+  #    siteUrlAuthor:

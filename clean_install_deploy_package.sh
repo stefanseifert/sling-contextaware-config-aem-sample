@@ -78,8 +78,17 @@ fi
 cd ../
 
 echo ""
-echo "***  Deploy samplecontent packages  ***"
+echo "***  Deploy config and samplecontent packages  ***"
 echo ""
+
+cd config-definition
+mvn -B $sling_params -Pdeploy-config-packages wcmio-content-package:install
+
+if [ "$?" -ne "0" ]; then
+  error_exit "*** Deploying config packages FAILED ***"
+fi
+
+cd ../
 
 cd sample-content
 mvn -B $sling_params content-package:install
