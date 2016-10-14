@@ -19,12 +19,8 @@
     org.apache.sling.commons.log.file.number=I"15"
 
   # Configure Sling Context-Aware Configuration for AEM - add lookup in jcr:content subnodes
-  org.apache.sling.contextaware.config.resource.impl.def.DefaultConfigurationResourceResolvingStrategy
-    configRefResourceNames=[".","jcr:content"]
-
-  # Configure Sling Context-Aware Configuration for AEM - add lookup in jcr:content subnodes
   org.apache.sling.contextaware.config.resource.impl.def.DefaultContextPathStrategy
-    configRefResourceNames=[".","jcr:content"]
+    configRefResourceNames=["jcr:content"]
 
 
 [configurations runModes=author]
