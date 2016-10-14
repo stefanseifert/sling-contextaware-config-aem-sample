@@ -6,7 +6,7 @@
       cq:template="/apps/contextaware-config-sample/templates/sample"
       jcr:primaryType="cq:PageContent"
       jcr:title="en"
-      sling:config-ref="/conf/contextaware-config-sample/sample"
+      sling:configRef="/conf/contextaware-config-sample/sample"
       sling:resourceType="/apps/contextaware-config-sample/components/page/sample"
       pageTitle="Sample Page">
     <image
