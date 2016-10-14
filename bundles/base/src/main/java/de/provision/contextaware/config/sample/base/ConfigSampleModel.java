@@ -2,7 +2,7 @@
 package de.provision.contextaware.config.sample.base;
 
 import org.apache.sling.api.resource.Resource;
-import org.apache.sling.contextaware.config.ConfigurationBuilder;
+import org.apache.sling.caconfig.ConfigurationBuilder;
 import org.apache.sling.models.annotations.Model;
 
 /**

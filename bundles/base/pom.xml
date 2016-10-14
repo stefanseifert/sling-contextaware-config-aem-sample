@@ -33,7 +33,7 @@
     </dependency>
     <dependency>
       <groupId>org.apache.sling</groupId>
-      <artifactId>org.apache.sling.contextaware.config.api</artifactId>
+      <artifactId>org.apache.sling.caconfig.api</artifactId>
       <scope>compile</scope>
     </dependency>
 
