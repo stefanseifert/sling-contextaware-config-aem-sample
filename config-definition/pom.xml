@@ -86,6 +86,8 @@
               <packageFiles>
                 <packageFile>
                   <packageFile>target/configuration/${config.environment}/aem-author/packages/sample-aem-cms-config.zip</packageFile>
+                </packageFile>
+                <packageFile>
                   <packageFile>target/configuration/${config.environment}/aem-author/packages/sample-aem-cms-systemusers.zip</packageFile>
                 </packageFile>
               </packageFiles>
