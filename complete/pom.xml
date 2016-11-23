@@ -15,7 +15,7 @@
   <packaging>content-package</packaging>
 
   <properties>
-    <content-package-name>contextaware-config-sample</content-package-name>
+    <content-package-name>contextaware-config-sample-complete</content-package-name>
     <content-package-group>pv-sample</content-package-group>
     <dependency-includeGroupIds>
       de.pro-vision.contextaware.config.sample
@@ -66,7 +66,7 @@
           <group>${content-package-group}</group>
           <filters>
             <filter>
-              <root>/apps/pv-training/${content-package-name}</root>
+              <root>/apps/${content-package-name}</root>
             </filter>
           </filters>
         </configuration>
@@ -86,7 +86,7 @@
             <configuration>
               <outputAbsoluteArtifactFilename>true</outputAbsoluteArtifactFilename>
               <includeGroupIds>${dependency-includeGroupIds}</includeGroupIds>
-              <outputDirectory>${project.build.directory}/vault-work/jcr_root/apps/pv-training/${content-package-name}/install</outputDirectory>
+              <outputDirectory>${project.build.directory}/vault-work/jcr_root/apps/${content-package-name}/install</outputDirectory>
               <includeScope>compile</includeScope>
             </configuration>
           </execution>
@@ -99,7 +99,7 @@
             <configuration>
               <outputAbsoluteArtifactFilename>true</outputAbsoluteArtifactFilename>
               <includeArtifactIds>${dependency-includeArtifactIds}</includeArtifactIds>
-              <outputDirectory>${project.build.directory}/vault-work/jcr_root/apps/pv-training/${content-package-name}/install</outputDirectory>
+              <outputDirectory>${project.build.directory}/vault-work/jcr_root/apps/${content-package-name}/install</outputDirectory>
               <includeScope>compile</includeScope>
             </configuration>
           </execution>

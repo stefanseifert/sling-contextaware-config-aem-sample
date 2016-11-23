@@ -69,7 +69,7 @@ echo "*** Deploy complete package ***"
 echo ""
 
 cd complete
-mvn -B $sling_params content-package:install
+mvn -B $sling_params wcmio-content-package:install
 
 if [ "$?" -ne "0" ]; then
   error_exit "*** Deploying complete package FAILED ***"
@@ -91,7 +91,7 @@ fi
 cd ../
 
 cd sample-content
-mvn -B $sling_params content-package:install
+mvn -B $sling_params wcmio-content-package:install
 
 if [ "$?" -ne "0" ]; then
   error_exit "*** Deploying sample content packages FAILED ***"
