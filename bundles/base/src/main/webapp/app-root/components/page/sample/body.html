@@ -2,6 +2,8 @@
 
 <div data-sly-use.configObject="de.provision.contextaware.config.sample.base.ConfigSampleModel">
 
+  <h3>Config name: de.provision.contextaware.config.sample.base.ConfigSample</h3>
+
   <dl>
     <dt>stringParam:</dt>
     <dd>${configObject.config.stringParam}</dd>
@@ -9,6 +11,14 @@
     <dd>${configObject.config.intParam}</dd>
     <dt>boolParam:</dt>
     <dd>${configObject.config.boolParam}</dd>
+    <dt>stringArrayParam:</dt>
+    <dd>${configObject.config.stringArrayParam}</dd>
   </dl>
+
+  <h3>Config collection name: de.provision.contextaware.config.sample.base.ConfigSampleList)</h3>
+
+  <ul data-sly-list.item="${configObject.configList}">
+    <li>stringParam: ${item.stringParam}</li>
+  </ul>
 
 </div>

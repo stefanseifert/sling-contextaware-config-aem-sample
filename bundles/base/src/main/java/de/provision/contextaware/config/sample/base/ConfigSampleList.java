@@ -7,28 +7,11 @@ import org.apache.sling.caconfig.annotation.Configuration;
  * Config annotation class example
  */
 @Configuration
-public @interface ConfigSample {
+public @interface ConfigSampleList {
 
   /**
    * @return String parameter
    */
   String stringParam();
-
-  /**
-   * @return Integer parameter
-   */
-  int intParam();
-
-  /**
-   * @return Boolean parameter
-   */
-  boolean boolParam();
-
-  /**
-   * @return String array parameter with default value
-   */
-  String[] stringArrayParam() default {
-    "value1", "value2"
-  };
 
 }

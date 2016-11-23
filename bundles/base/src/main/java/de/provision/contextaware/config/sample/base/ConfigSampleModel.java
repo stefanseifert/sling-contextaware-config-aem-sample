@@ -1,6 +1,8 @@
 /* Copyright (c) pro!vision GmbH. All rights reserved. */
 package de.provision.contextaware.config.sample.base;
 
+import java.util.Collection;
+
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.caconfig.ConfigurationBuilder;
 import org.apache.sling.models.annotations.Model;
@@ -12,12 +14,15 @@ import org.apache.sling.models.annotations.Model;
 public class ConfigSampleModel {
 
   private ConfigSample config;
+  private Collection<ConfigSampleList> configList;
 
   /**
    * @param resource Current resource
    */
   public ConfigSampleModel(Resource resource) {
-    this.config = resource.adaptTo(ConfigurationBuilder.class).as(ConfigSample.class);
+    ConfigurationBuilder configBuilder = resource.adaptTo(ConfigurationBuilder.class);
+    this.config = configBuilder.as(ConfigSample.class);
+    this.configList = configBuilder.asCollection(ConfigSampleList.class);
   }
 
   /**
@@ -25,6 +30,13 @@ public class ConfigSampleModel {
    */
   public ConfigSample getConfig() {
     return this.config;
+  }
+
+  /**
+   * @return Configuration list
+   */
+  public Collection<ConfigSampleList> getConfigList() {
+    return this.configList;
   }
 
 }
