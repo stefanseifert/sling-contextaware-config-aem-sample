@@ -6,7 +6,7 @@ import org.apache.sling.caconfig.annotation.Configuration;
 /**
  * Config annotation class example
  */
-@Configuration
+@Configuration(label = "Sample Configuration", description = "This is a sample configuration.")
 public @interface ConfigSample {
 
   /**

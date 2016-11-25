@@ -13,4 +13,5 @@
         jcr:primaryType="nt:unstructured" />
   </jcr:content>
   <sub-page />
+  <config />
 </jcr:root>
