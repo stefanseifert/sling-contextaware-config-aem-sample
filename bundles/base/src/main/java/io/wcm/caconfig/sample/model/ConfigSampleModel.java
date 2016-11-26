@@ -1,11 +1,15 @@
 /* Copyright (c) pro!vision GmbH. All rights reserved. */
-package de.provision.contextaware.config.sample.base;
+package io.wcm.caconfig.sample.model;
 
 import java.util.Collection;
 
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.caconfig.ConfigurationBuilder;
 import org.apache.sling.models.annotations.Model;
+
+import io.wcm.caconfig.sample.config.ConfigSample;
+import io.wcm.caconfig.sample.config.ConfigSample2;
+import io.wcm.caconfig.sample.config.ConfigSampleList;
 
 /**
  * Sling model example
@@ -14,6 +18,7 @@ import org.apache.sling.models.annotations.Model;
 public class ConfigSampleModel {
 
   private ConfigSample config;
+  private ConfigSample2 config2;
   private Collection<ConfigSampleList> configList;
 
   /**
@@ -22,6 +27,7 @@ public class ConfigSampleModel {
   public ConfigSampleModel(Resource resource) {
     ConfigurationBuilder configBuilder = resource.adaptTo(ConfigurationBuilder.class);
     this.config = configBuilder.as(ConfigSample.class);
+    this.config2 = configBuilder.as(ConfigSample2.class);
     this.configList = configBuilder.asCollection(ConfigSampleList.class);
   }
 
@@ -30,6 +36,13 @@ public class ConfigSampleModel {
    */
   public ConfigSample getConfig() {
     return this.config;
+  }
+
+  /**
+   * @return Configuration object
+   */
+  public ConfigSample2 getConfig2() {
+    return this.config2;
   }
 
   /**

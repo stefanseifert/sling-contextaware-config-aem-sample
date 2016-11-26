@@ -1,5 +1,5 @@
 /* Copyright (c) pro!vision GmbH. All rights reserved. */
-package de.provision.contextaware.config.sample.base;
+package io.wcm.caconfig.sample.config;
 
 import org.apache.sling.caconfig.annotation.Configuration;
 import org.apache.sling.caconfig.annotation.Property;

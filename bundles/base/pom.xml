@@ -60,7 +60,7 @@
               SLING-INF/app-root;overwrite:=true;ignoreImportProviders:=xml;path:=/apps/contextaware-config-sample
             </Sling-Initial-Content>
             <Sling-Model-Packages>
-              de.provision.contextaware.config.sample.base
+              io.wcm.caconfig.sample.model
             </Sling-Model-Packages>
           </instructions>
         </configuration>
