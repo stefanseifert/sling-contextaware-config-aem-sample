@@ -64,6 +64,13 @@
         <artifactId>org.apache.sling.caconfig.impl</artifactId>
         <version>1.1.1-SNAPSHOT</version>
       </dependency>
+      
+      <!-- wcm.io Context-Aware Config Editor -->
+      <dependency>
+        <groupId>io.wcm</groupId>
+        <artifactId>io.wcm.caconfig.editor</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+      </dependency>
 
       <!-- Import AEM dependencies -->
       <dependency>

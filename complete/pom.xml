@@ -18,7 +18,8 @@
     <content-package-name>contextaware-config-sample-complete</content-package-name>
     <content-package-group>pv-sample</content-package-group>
     <dependency-includeGroupIds>
-      de.pro-vision.contextaware.config.sample
+      de.pro-vision.contextaware.config.sample,
+      io.wcm
     </dependency-includeGroupIds>
     <dependency-includeArtifactIds>
       org.apache.sling.caconfig.api,
@@ -49,6 +50,12 @@
     <dependency>
       <groupId>org.apache.sling</groupId>
       <artifactId>org.apache.sling.caconfig.impl</artifactId>
+      <scope>compile</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>io.wcm</groupId>
+      <artifactId>io.wcm.caconfig.editor</artifactId>
       <scope>compile</scope>
     </dependency>
 
