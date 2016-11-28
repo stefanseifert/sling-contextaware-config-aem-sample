@@ -20,7 +20,7 @@ public @interface ConfigSampleNested {
    * @return Sub Config
    */
   @Property(label = "Sub Config", description = "Nested configuration")
-  ConfigSampleSub sub();
+  ConfigSampleSub[] sub();
 
   /**
    * @return Sub Config 2
