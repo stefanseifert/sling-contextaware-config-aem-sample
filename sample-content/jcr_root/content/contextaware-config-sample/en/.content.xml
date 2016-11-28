@@ -12,6 +12,7 @@
     <image
         jcr:primaryType="nt:unstructured" />
   </jcr:content>
-  <sub-page />
   <config />
+  <sub-page />
+  <sub-page-2 />
 </jcr:root>
